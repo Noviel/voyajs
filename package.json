@@ -1,6 +1,6 @@
 {
   "name": "@dqnt/voyage",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Intersystem JavaScript communication",
   "main": "src/index.ts",
   "author": "Alexander \"snov\" Semenchenko",
