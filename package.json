@@ -1,5 +1,5 @@
 {
-  "name": "voyage",
+  "name": "voyajs",
   "version": "0.1.0",
   "description": "Intersystem JavaScript communication",
   "main": "src/index.ts",
