@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import { Communicator } from './Communicator';
 
-export function remoteHTTPCaller(baseUrl = process.env.POELITE_API_URL) {
+export function remoteHTTPCaller(baseUrl: string) {
   const apiBaseUrl = baseUrl;
 
   if (!apiBaseUrl) {
@@ -27,9 +27,7 @@ export function remoteHTTPCaller(baseUrl = process.env.POELITE_API_URL) {
   };
 }
 
-interface ResourceToEvent {
-
-}
+interface ResourceToEvent {}
 
 export function interCaller<T>(communicator: Communicator, map: T) {
   let requestedData = 0;

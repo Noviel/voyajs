@@ -2,8 +2,18 @@
   "compilerOptions": {
     "target": "es2019",
     "module": "esnext",
+    "moduleResolution": "node",
+
+    "lib": ["webworker", "dom", "es2016"],
+    
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
     "strict": true
   },
-  "include": ["src/**.*"],
-  "exclude": ["node_modules", "**/__tests__/*", "*.test.*"]
+  "exclude": ["node_modules", "**/__tests__/*"]
 }

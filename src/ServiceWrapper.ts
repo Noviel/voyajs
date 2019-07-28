@@ -1,6 +1,6 @@
 import { action, reaction, observable } from 'mobx';
 
-import { runWithComlink } from '../web-worker/runner';
+import { runWithComlink } from './WebWorker/runner';
 
 type ServiceUse<S> = (service: S) => void;
 
