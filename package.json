@@ -1,6 +1,6 @@
 {
   "name": "voyajs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Intersystem JavaScript communication",
   "main": "src/index.ts",
   "author": "Alexander \"snov\" Semenchenko",
