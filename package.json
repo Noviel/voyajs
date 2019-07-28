@@ -1,5 +1,5 @@
 {
-  "name": "voyajs",
+  "name": "@dqnt/voyage",
   "version": "0.1.1",
   "description": "Intersystem JavaScript communication",
   "main": "src/index.ts",
