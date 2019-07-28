@@ -1,0 +1,64 @@
+{
+  "name": "voyage",
+  "version": "0.1.0",
+  "description": "Intersystem JavaScript communication",
+  "main": "src/index.ts",
+  "author": "Alexander \"snov\" Semenchenko",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "build": "pack build",
+    "release": "pack publish"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js,jsx,ts,tsx}": [
+        "eslint --fix",
+        "prettier --write",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "pkg/**.*"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint-staged"
+    }
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "__tests__/**/*",
+            "*.test.ts"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@pika/plugin-build-node": "^0.5.1",
+    "@pika/plugin-build-web": "^0.5.1",
+    "@pika/plugin-standard-pkg": "^0.5.1",
+    "@pika/types": "^0.5.1",
+    "@types/jest": "^24.0.15",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.1",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.2.1",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3"
+  }
+}
