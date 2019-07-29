@@ -82,15 +82,15 @@ export class WorkerInsideCommunicator extends InterCommunicator {
 }
 
 /*
-*/
+ */
 
-export class HttpRequestCommunicator implements Communicator {
-  public expose<T>(event: string, initialValue: T, unique?: boolean) {
+// export class HttpRequestCommunicator implements Communicator {
+//   public expose<T>(event: string, initialValue: T, unique?: boolean) {
 
-  }
+//   }
 
-  public on<T extends Event<T['data']>>(event: T['event'], observer: (data: T['data']) => void) {
+//   public on<T extends Event<T['data']>>(event: T['event'], observer: (data: T['data']) => void) {
 
-  }
+//   }
 
-}
+// }

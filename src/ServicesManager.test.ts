@@ -3,11 +3,16 @@ import { ServicesManager } from './ServicesManager';
 
 const noOp = () => void 0;
 
+interface Event {
+  event: 'EVENT';
+  data: number;
+}
+
 class ProxyService {
   public state = 0;
 
   public constructor(public communicator: Communicator) {
-    communicator.on('EVENT', (data: number) => (this.state = data));
+    communicator.on<Event>('EVENT', (data: number) => (this.state = data));
   }
 
   public act() {
@@ -18,7 +23,7 @@ class ProxyService {
 function createProxyService(communicator: Communicator) {
   let state = 0;
 
-  communicator.on('EVENT', (data: number) => {
+  communicator.on<Event>('EVENT', (data: number) => {
     state = data;
   });
 
@@ -37,7 +42,7 @@ describe(`ServicesManager`, () => {
   it(`should work`, () => {
     const sm = new ServicesManager();
 
-    const { service } = sm.addLocalService('service', createProxyService);
+    const { service } = sm.addLocalService('service', createProxyService, {});
     const comm = service.communicator;
 
     const ev = comm.expose(`EVENT`, 420);

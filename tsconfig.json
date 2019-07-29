@@ -3,8 +3,6 @@
     "target": "es2019",
     "module": "esnext",
     "moduleResolution": "node",
-
-    "lib": ["webworker", "dom", "es2016"],
     
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
@@ -15,5 +13,6 @@
     "strictNullChecks": true,
     "strict": true
   },
-  "exclude": ["node_modules", "**/__tests__/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/__tests__/*", "*.test.ts"]
 }

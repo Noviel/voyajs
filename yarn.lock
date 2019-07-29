@@ -916,6 +916,15 @@
     rollup "^1.1.0"
     rollup-plugin-babel "^4.3.0"
 
+"@pika/plugin-build-types@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@pika/plugin-build-types/-/plugin-build-types-0.5.1.tgz#2c239a62216ec34f6e677132b55175d06b66c95c"
+  integrity sha512-e2NKImRCZLHEJHoJ0dxpOldVQhn1jXmnSha+02sTXe+iB14XqUs5aWozl0AY+KYk3+qGv3JzYvrSaBoX2QkAOw==
+  dependencies:
+    execa "^2.0.0"
+    mkdirp "^0.5.1"
+    typescript "~3.4.0"
+
 "@pika/plugin-build-web@^0.5.1":
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/@pika/plugin-build-web/-/plugin-build-web-0.5.1.tgz#b6fbd25df4f822b3a1384d94972385b070d1b319"
@@ -930,6 +939,14 @@
   integrity sha512-HlMwf5Sl3ripvMFXCYXshy7HmMyqaxH/0lrmdyvediusGpfZgMul1twjtRNOq2l6jRaJZpb3CeVi0lZh7qnTxQ==
   dependencies:
     "@types/node" "^10.12.18"
+    standard-pkg "^0.4.0"
+
+"@pika/plugin-ts-standard-pkg@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@pika/plugin-ts-standard-pkg/-/plugin-ts-standard-pkg-0.5.1.tgz#5006d71ad7e10d030f504ddab637137c1ea40c0b"
+  integrity sha512-UYrrO0DZIw9XkbxsI/ugVRsP3h0KsxlrGcYmIqdV9BouyOd+KvoHWVbjlhJV/F8w0+dU7krtWgQ61k3uHrZCyQ==
+  dependencies:
+    execa "^2.0.0"
     standard-pkg "^0.4.0"
 
 "@pika/types@^0.5.1":
@@ -2097,7 +2114,7 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
-execa@^2.0.3:
+execa@^2.0.0, execa@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/execa/-/execa-2.0.3.tgz#4b84301b33042cfb622771e886ed0b10e5634642"
   integrity sha512-iM124nlyGSrXmuyZF1EMe83ESY2chIYVyDRZKgmcDynid2Q2v/+GuE7gNMl6Sy9Niwf4MC0DDxagOxeMPjuLsw==
@@ -3816,6 +3833,11 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
+mobx-state-tree@^3.14.1:
+  version "3.14.1"
+  resolved "https://registry.yarnpkg.com/mobx-state-tree/-/mobx-state-tree-3.14.1.tgz#0a523876b87817f5c8553a162e71b38044f0c9da"
+  integrity sha512-cmwO1jvYPgaJTGJtqId0Qod4cDqcJEWWCwSu/Uns7jFT+kWKzLFhzb9jxPub8YM3HSXg7HPGpKiLe970he9FOw==
+
 mobx@^5.13.0:
   version "5.13.0"
   resolved "https://registry.yarnpkg.com/mobx/-/mobx-5.13.0.tgz#0fd68f10aa5ff2d146a4ed9e145b53337cfbca59"
@@ -5296,6 +5318,11 @@ typescript@^3.5.3:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.3.tgz#c830f657f93f1ea846819e929092f5fe5983e977"
   integrity sha512-ACzBtm/PhXBDId6a6sDJfroT2pOWt/oOnk4/dElG5G33ZL776N3Y6/6bKZJBFpd+b05F3Ct9qDjMeJmRWtE2/g==
+
+typescript@~3.4.0:
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.5.tgz#2d2618d10bb566572b8d7aad5180d84257d70a99"
+  integrity sha512-YycBxUb49UUhdNMU5aJ7z5Ej2XGmaIBL0x34vZ82fn3hGvD+bgrMrVDpatgz2f7YxUMJxMkbWxJZeAvDxVe7Vw==
 
 uglify-js@^3.1.4:
   version "3.6.0"
